@@ -41,7 +41,7 @@ Different models exhibit strengths under different conditions—for example:
 - others reconstruct **fine geometric details**
 
 MoE-GS learns a **pixel-wise routing mechanism** that dynamically selects the most suitable expert during rendering.
-
+ 
 Paper: **ICLR 2026**  
 Project repository:  
 https://github.com/cvsp-lab/MoE-GS
