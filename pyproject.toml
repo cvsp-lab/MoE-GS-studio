@@ -1,0 +1,28 @@
+[project]
+name = "mode"
+version = "0.1.0"
+description = "Mixture of Dynamics Experts for 4D Gaussian Splatting"
+requires-python = ">=3.9,<3.12"
+dependencies = [
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    "torchaudio>=2.1.0",
+    "numpy>=1.24,<2.0",
+    "matplotlib",
+    "lpips",
+    "pytorch_msssim",
+    "open3d",
+    "imageio[ffmpeg]>=2.31",
+    "mmcv>=1.6.0",
+]
+
+[tool.setuptools]
+packages = []
+
+[tool.uv]
+# PyTorch CUDA 11.8 wheels
+extra-index-url = ["https://download.pytorch.org/whl/cu118"]
+
+[tool.uv.sources]
+# Third-party CUDA extensions must be built separately after env setup.
+# See THIRDPARTY_RECOVERY.md for instructions.
