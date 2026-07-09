@@ -43,6 +43,12 @@ This repository provides a compact overview of our MoE-based 4DGS papers and the
 
 ### MoE-GS: Mixture of Experts for Dynamic Gaussian Splatting
 
+<div align="center">
+  <img src="assets/moegs.png" width="90%" alt="MoE-GS">
+</div>
+
+<br>
+
 **MoE-GS** introduces a Mixture-of-Experts framework for dynamic Gaussian splatting. It first trains multiple dynamic Gaussian experts independently and then learns a **volume-aware pixel router** that adaptively blends expert outputs across space, time, and viewing direction.
 
 This design allows MoE-GS to combine heterogeneous 4DGS models without requiring them to share the same canonical Gaussian representation.
@@ -50,6 +56,12 @@ This design allows MoE-GS to combine heterogeneous 4DGS models without requiring
 **Authors**: In-Hwan Jin*, Hyeongju Mun*, Joonsoo Kim, Kugjin Yun, and Kyeongbo Kong† (* equal contribution, † corresponding author)
 
 ### MoDE: Mixture of Deformation Experts
+
+<div align="center">
+  <img src="assets/mode.png" width="90%" alt="MoDE">
+</div>
+
+<br>
 
 **MoDE** studies multi-deformation modeling for dynamic Gaussian splatting. Instead of relying on a single deformation model, MoDE integrates multiple deformation experts into a shared canonical Gaussian representation and jointly optimizes them within a unified dynamic Gaussian pipeline.
 
